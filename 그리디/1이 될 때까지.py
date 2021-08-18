@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open("input.txt","r")   
-
 n, k = map(int, input().split())
 cnt = 0
 while True:

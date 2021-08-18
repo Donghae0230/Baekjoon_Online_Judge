@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open("input.txt","r")   
-
 n, m ,k = map(int, input().split())
 data = list(map(int,input().split()))
 data.sort()

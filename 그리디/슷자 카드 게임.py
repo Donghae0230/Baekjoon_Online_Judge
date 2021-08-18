@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open("input.txt","r")   
-
 m, n = map(int, input().split())
 comp = []
 for _ in range(n):
