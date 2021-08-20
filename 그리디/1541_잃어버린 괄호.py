@@ -8,7 +8,7 @@ def calPlus(s):
     return res
 
 s = list(input().split('-'))    # '-'를 기준으로 나누기
-for i in range(len(s)): #식에 있는 '+'제거 
+for i in range(len(s)): #식에 있는 '+'제거
     if '+' in s[i]: 
         s[i] = calPlus(s[i])
         
