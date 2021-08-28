@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("input.txt", "r")
 
 n = int(input())
-target = [int(sys.stdin.readline().strip()) for _ in range(n)]
+target = [int(sys.stdin.readline()) for _ in range(n)]
 stack = []
 res = []
 for i in range(1, n+1):
