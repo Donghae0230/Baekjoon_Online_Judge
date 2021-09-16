@@ -12,3 +12,4 @@ for i in range(n):
 for _ in range(m):
     i, j = map(int, sys.stdin.readline().split())
     print(arr[j] - arr[i-1])
+    
