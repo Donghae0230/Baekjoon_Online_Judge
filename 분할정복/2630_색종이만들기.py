@@ -3,6 +3,7 @@ sys.stdin = open("input.txt", "r")
 
 def cutPaper(x, y, n):  # x,y좌표와 색종이 크기 
     global cnt_white, cnt_blue
+    print(x, y, n)
     for i in range(x, x+n):
         for j in range(y, y+n):
             if paper[x][y] != paper[i][j]:
@@ -10,7 +11,7 @@ def cutPaper(x, y, n):  # x,y좌표와 색종이 크기
                 cutPaper(x, y+n//2, n//2)
                 cutPaper(x+n//2, y, n//2)
                 cutPaper(x+n//2, y+n//2, n//2)
-                return
+                return # 호출한 함수는 중복되지 않도록 종료시킴
 
     if paper[x][y] == 1:
         cnt_blue += 1
