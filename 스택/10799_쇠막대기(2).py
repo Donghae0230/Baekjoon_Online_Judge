@@ -1,4 +1,3 @@
-# 다른 풀이
 import sys
 sys.stdin = open("input.txt", "r")
 
@@ -17,4 +16,3 @@ def cutIron(bar):
     return res
 bar = sys.stdin.readline()
 print(cutIron(bar))
-

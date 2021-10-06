@@ -2,19 +2,18 @@ import sys
 sys.stdin = open("input.txt", "r")
 
 def cutIron(bar):
-    lst = []
-    res = 0
+    stack = []
+    cnt = 0
     for i in range(len(bar)):
         if bar[i] == '(':
-            lst.append('(')
+            stack.append('(')
         elif bar[i] == ')':
             if bar[i-1] == '(':
-                res += len(lst) - 1
-                lst.pop()
+                stack.pop()
+                cnt += len(stack)
             else:
-                res += 1
-                lst.pop()
-    return res
+                stack.pop()
+                cnt += 1
+    return cnt
 bar = list(sys.stdin.readline())
 print(cutIron(bar))
-
